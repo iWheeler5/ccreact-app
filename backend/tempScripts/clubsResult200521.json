@@ -1,0 +1,145 @@
+{
+    "clubs": [
+        {
+            "_id": "609fe900deb20141246007c7",
+            "name": "Motion & Marble Factory",
+            "description": "Voted as DJ Mags 11th best club in the world and the UK’s best large club, Motion is one of the worlds most exciting and ever evolving venues. Set in a matrix of old warehouse spaces in an industrial area of the city next to the River Avon, the venue showcases events from every corner of the electronic music spectrum and beyond with previous headliners including the likes of The Chemical Brothers, Chase & Status and Adam Beyer to name a few.",
+            "reviews": [
+                {
+                    "date": "2020-05-13T21:07:10.000Z",
+                    "body": "The Club was playing banging music all night, me and my mates had an excellent time. Prices were cheap, and the atmosphere unreal.",
+                    "overallscore": 9,
+                    "atmopsherecore": 10,
+                    "lineupscore": 8,
+                    "soundsystemscore": 9,
+                    "pricesscore": 10
+                },
+                {
+                    "date": "2020-05-13T21:07:10.000Z",
+                    "body": "Such a big night out, Motion never disappoints. Still couldn't believe Solomun was playing",
+                    "overallscore": 10,
+                    "atmopsherecore": 9,
+                    "lineupscore": 10,
+                    "soundsystemscore": 8,
+                    "pricesscore": 8
+                }
+            ],
+            "cityId": 2,
+            "capacity": 2200,
+            "coverimgurl": "https://d23sy9fe9womrt.cloudfront.net/9/32409_1_in-motion-x-shall-not-fade-at-marble-factory-bristol-review_ban.jpg",
+            "address": {
+                "addressline1": "74-78 Avon Street",
+                "city": "Bristol",
+                "postcode": "BS2 0PX"
+            }
+        },
+        {
+            "_id": "60a56a71f24bd96eb643b155",
+            "name": "Basement 45",
+            "description": "Originally used as cellars and basements for the town houses on Unity Street, Basement 45 now hosts regular club nights featuring guest DJs in the 300 capacity venue.",
+            "reviews": [
+                {
+                    "date": "2020-07-17T21:07:10.000Z",
+                    "body": "Always a great night in Basement, started off as a quiet one and always goes massive. Drinks were cheap, the bass was heavy, Bristol never disappoints.",
+                    "overallscore": 8,
+                    "atmopsherecore": 8,
+                    "lineupscore": 7,
+                    "soundsystemscore": 10,
+                    "pricesscore": 10
+                }
+            ],
+            "cityId": 2,
+            "capacity": 300,
+            "coverimgurl": "https://static.wixstatic.com/media/f381a1_9cfcbc1ccf014ae1962b936c9c3d200c.jpg/v1/fill/w_555,h_370,al_c,q_90/f381a1_9cfcbc1ccf014ae1962b936c9c3d200c.webp",
+            "address": {
+                "addressline1": "8 Frogmore Street",
+                "city": "Bristol",
+                "postcode": "BS1 5NA"
+            }
+        },
+        {
+            "_id": "60a56e74d09f80fcf1f16d52",
+            "name": "The Island",
+            "description": "The Island is hidden away in the basement of an old Victorian police station, now operating as an arts centre and event space. As you descend into the basement vaults of the building you find the main room all painted black with an industrial underground club feel. ",
+            "reviews": [
+                {
+                    "date": "2020-07-16T23:00:00.000Z",
+                    "body": "The Club was playing top notch music all night, I had a great time. Prices were expensive though, and the atmosphere awesome",
+                    "overallscore": 7,
+                    "atmopsherecore": 8,
+                    "lineupscore": 7,
+                    "soundsystemscore": 9,
+                    "pricesscore": 3
+                }
+            ],
+            "cityId": 2,
+            "capacity": 250,
+            "coverimgurl": "https://clubculturestorage.blob.core.windows.net/city-images/TheIsland.jpg",
+            "address": {
+                "addressline1": "Bridewell St",
+                "city": "Bristol",
+                "postcode": "BS1 2QD"
+            }
+        },
+        {
+            "_id": "60a56e74d09f80fcf1f16d53",
+            "name": "The Black Swan",
+            "description": "The Black Swan plays host to frequent events with a Drum & Bass and Jungle focus their famous Yard Parties.",
+            "reviews": [],
+            "cityId": 2,
+            "capacity": 700,
+            "coverimgurl": "https://clubculturestorage.blob.core.windows.net/city-images/TheBlackSwan.jpg",
+            "address": {
+                "addressline1": "438 Stapleton Road",
+                "city": "Bristol",
+                "postcode": "BS5 6NR"
+            }
+        },
+        {
+            "_id": "60a56e74d09f80fcf1f16d54",
+            "name": "The Crofters Rights",
+            "description": "This pub prides itselft on Craft Beer and Pizza during the day but comes alive at night, playing host to exciting house, techno and drum & bass events.",
+            "reviews": [],
+            "cityId": 2,
+            "capacity": 300,
+            "coverimgurl": "https://clubculturestorage.blob.core.windows.net/city-images/CroftersRights.jpg",
+            "address": {
+                "addressline1": "117-119 Stokes Croft",
+                "city": "Bristol",
+                "postcode": "BS1 3RW"
+            }
+        },
+        {
+            "_id": "60a56e74d09f80fcf1f16d55",
+            "name": "Timbuk2",
+            "description": "This below street level club is woven into the fabric of Bristol nightlife. Any Bristol electronic music enthusiast will have fond memories of this unique venue. In addition to three rooms of music, the clubs layout includes two bars and seating areas. With its DJ booth dead centre, the tunnel like main room provides an intimacy that more conventional floor plans cannot offer.",
+            "reviews": [],
+            "cityId": 2,
+            "capacity": 300,
+            "coverimgurl": "https://scontent-lcy1-1.xx.fbcdn.net/v/t1.18169-9/10423939_863621177035906_2086386973235295920_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=174925&_nc_ohc=dcFuuMG_ZHkAX99gCop&_nc_ht=scontent-lcy1-1.xx&oh=3fa6a51da23f521f52888691874a85d1&oe=60C9C018",
+            "address": {
+                "addressline1": "22 Small Street",
+                "city": "Bristol",
+                "postcode": "BS1 1DW"
+            }
+        },
+        {
+            "_id": "60a56e74d09f80fcf1f16d56",
+            "name": "Cosies",
+            "description": "This Bar plays host to an impressive array of guest DJs in an intimate underground setting.",
+            "reviews": [],
+            "cityId": 2,
+            "capacity": 100,
+            "coverimgurl": "https://media.timeout.com/images/101900801/750/422/image.jpg",
+            "address": {
+                "addressline1": "34 Portland Square",
+                "city": "Bristol",
+                "postcode": "BS2 8RG"
+            }
+        }
+    ],
+    "page": 0,
+    "filters": {},
+    "entries_per_page": 20,
+    "total_results": 7
+}

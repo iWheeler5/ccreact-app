@@ -55,4 +55,62 @@ export default class clubsDAO{
             return {clubsList: [], totalNumCulbs: 0}
         }
     }
+
+    static async getClubByID(id){
+        try{
+            const pipeline = [
+                {
+                    $match: {
+                        _id: new ObjectId(id),
+                    },
+                },
+                    {
+                        $lookup: {
+                            from: "reviews",
+                            let: {
+                                id: "$_id",
+                            },
+                            pipeline: [
+                                {
+                                    $match: {
+                                        $expr: {
+                                            $eq: ["$club_id", "$$id"],
+                                        },
+                                    },
+                                },
+                                {
+                                    $sort: {
+                                        date: -1,
+                                    }
+                                },
+                            ],
+                            as: "reviews",
+                        },
+                    },
+                    {
+                        $addFields: {
+                            reviews: "$reviews",
+                        },
+                    }
+            ]
+            return await clubs.aggregate(pipeline).next()
+
+        }catch (e){
+            console.error(`Something went wrong in getClubById: ${e}`)
+        }
+
+    }
+
+    static async getCities(){
+        let cities = []
+        try{
+            cities = await clubs.distinct("address.city")
+            return cities
+        }
+        catch(e){
+            console.error(`Unable to get cuisines, ${e}`)
+            return cities
+        }
+    }
+
 } 

@@ -30,4 +30,31 @@ export default class ClubsController{
         res.json(response)
 
     }
+
+    static async apiGetClubById(req, res, next) {
+        try{
+            let id = req.params.id || {}
+            let club = await ClubsDAO.getClubByID(id)
+            if(!club) {
+                res.status(404).json({error: "Not found"})
+                return
+            }
+            res.json(club)
+
+        } catch (e) {
+            console.log(`api, ${e}`)
+            res.status(500).json({error: e})
+        }
+    }
+
+    static async apiGetClubCities(req, res, next){
+        try{
+            let cities = await ClubsDAO.getCities()
+            res.json(cities)
+        } catch(e){
+            console.log(`api, ${e}`)
+            res.status(500).json({error:e})
+        }
+
+    }
 }
