@@ -8,12 +8,32 @@
   .home,
   .services,
   .products,
-  .sign-up {
+  .sign-up 
+  .club 
+  .clubs-list {
     display: flex;
     height: 90vh;
     align-items: center;
     justify-content: center;
     font-size: 3rem;
+  }
+
+  .club {
+    background-image: url('/src/images/cchomepage.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+  }
+
+  .clubs-list{
+    background-image: url('/src/images/cchomepage.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
   }
   
   .services {
