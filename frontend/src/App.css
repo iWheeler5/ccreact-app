@@ -1,64 +1,114 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Oswald', 'PT Sans', sans-serif;
-  }
-  
-  .home,
-  .services,
-  .products,
-  .sign-up 
-  .club 
-  .clubs-list {
-    display: flex;
-    height: 90vh;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", "PT Sans", sans-serif;
+}
 
-  .club {
-    background-image: url('/src/images/cchomepage.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #fff;
-    font-size: 100px;
-  }
+html {
+  background: url("/src/images/cchomepage.jpg") center center/cover no-repeat
+    fixed;
+}
 
-  .clubs-list{
-    background-image: url('/src/images/cchomepage.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #fff;
-    font-size: 100px;
-  }
-  
-  .services {
-    background-image: url('/src/images/img-2.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #fff;
-    font-size: 100px;
-  }
-  
-  .products {
-    background-image: url('/src/images/img-1.jpg');
-    background-position: center;
-    background-size: fill;
-    background-repeat: no-repeat;
-    color: #fff;
-    font-size: 100px;
-  }
-  
-  .sign-up {
-    background-image: url('/src/images/img-8.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #fff;
-    font-size: 100px;
-  }
+.home,
+.services,
+.products,
+.sign-up .club .clubs-list {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.club {
+  /* background-image: url("/src/images/cchomepage.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; */
+  color: #fff;
+  font-size: 100px;
+}
+
+.clubs-list {
+  /* background: url("/src/images/cchomepage.jpg") center center/cover no-repeat
+    fixed; */
+  height: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+  /* padding-top: 50px; */
+}
+
+.club-list-container {
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  display: flex;
+}
+
+.club-list-card {
+  padding: 8px 20px;
+  width: 90%;
+  border: 5px solid black;
+  transition: all 0.3s ease-out;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+.club-page-container {
+  height: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+}
+
+.club-page-info {
+  color: white;
+  width: 60%;
+  padding: 8px 20px;
+  margin-top: 5%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.club-img {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  display: flex;
+}
+
+.services {
+  background-image: url("/src/images/img-2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.products {
+  background-image: url("/src/images/img-1.jpg");
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.sign-up {
+  background-image: url("/src/images/img-8.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}

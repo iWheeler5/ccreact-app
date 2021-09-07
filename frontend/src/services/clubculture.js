@@ -10,7 +10,7 @@ class ClubCultureDataService {
   }
 
   find(query, by = "name", page = 0) {
-    return http.get(`?${by}=${query}&page=${page}`);
+    return http.get(`/clubs/?${by}=${query}&page=${page}`);
   }
 
   createReview(data) {
