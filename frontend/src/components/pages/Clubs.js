@@ -48,7 +48,7 @@ const Club = (props) => {
             {club.description}
             <br />
             <strong>Capacity: </strong>
-            {club.capacity}
+            {club.capacity.$numberInt}
             <br />
             <strong>Address: </strong>
             {club.address.addressline1} {club.address.city}{" "}
