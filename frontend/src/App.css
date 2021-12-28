@@ -5,7 +5,7 @@
   font-family: "Oswald", "PT Sans", sans-serif;
 }
 
-html {
+body {
   background: url("/src/images/cchomepage.jpg") center center/cover no-repeat
     fixed;
 }
@@ -43,8 +43,17 @@ html {
   /* padding-top: 50px; */
 }
 
+.card{
+  word-wrap: normal;
+}
+
+.card-body{
+  width:50%;
+}
+
 .club-list-container {
   margin-top: 1em;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   align-items: center;

@@ -8,7 +8,7 @@ function HeroSection() {
     <div className="hero-container">
       <h1>THE HOME OF UNDERGROUND</h1>
       <p>The home of all underground clubs in the UK</p>
-      <div className="hero-btns">
+      {/* <div className="hero-btns">
         <Button
           className="btns"
           buttonStyle="btn--outline"
@@ -23,7 +23,7 @@ function HeroSection() {
         >
           CLUBS
         </Button>
-      </div>
+      </div> */}
     </div>
   );
 }

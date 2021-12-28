@@ -1,0 +1,17 @@
+.homesection-container{
+    background-color: black;
+    height: 40vh;
+    opacity: 75%;
+}
+
+.homesection-container > h3{
+    color: white;
+}
+
+.homesection-card > h4{
+    color: white;
+}
+
+.homesection-title{
+    color: white;
+}

@@ -2,15 +2,15 @@ import http from "../http-common";
 
 class ClubCultureDataService {
   getAll(page = 0) {
-    return http.get(`/clubs/?page=${page}`);
+    return http.get(`clubs?page=${page}`);
   }
 
   get(id) {
-    return http.get(`/clubs/id/${id}`);
+    return http.get(`club?id=${id}`);
   }
 
   find(query, by = "name", page = 0) {
-    return http.get(`/clubs/?${by}=${query}&page=${page}`);
+    return http.get(`clubs?${by}=${query}&page=${page}`);
   }
 
   createReview(data) {
@@ -26,7 +26,7 @@ class ClubCultureDataService {
   }
 
   getCities(id) {
-    return http.get(`/clubs/cities`);
+    return http.get(`cities`);
   }
 }
 

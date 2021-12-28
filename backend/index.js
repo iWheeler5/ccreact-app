@@ -14,7 +14,9 @@ MongoClient.connect(
     {
         poolSize: 50,
         wtimeout: 2500,
-        useNewUrlParser: true
+        useNewUrlParser: true,
+        useUnifiedTopology: true
+
     }
 )
 .catch(err => {

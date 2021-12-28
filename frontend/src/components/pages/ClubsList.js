@@ -16,6 +16,8 @@ const ClubsList = (props) => {
     retrieveCities();
   }, []);
 
+  let pageNumber;
+
   const onChangeSearchName = (e) => {
     const searchName = e.target.value;
     setSearchName(searchName);
@@ -76,12 +78,24 @@ const ClubsList = (props) => {
   };
 
   const findByCity = () => {
-    if (searchCity === "All Cities") {
+    if (searchCity === "All cities") {
       refreshList();
     } else {
       find(searchCity, "city");
     }
   };
+
+  const nextPage = () =>{
+    pageNumber = 
+    ClubCultureDataService.getAll(pageNumber)
+      .then((response) => {
+        console.log(response.data);
+        setClubs(response.data.clubs);
+      })
+      .catch((e) => {
+        console.log(e);
+      });
+  }
 
   return (
     <div className="clubs-list">
@@ -156,12 +170,12 @@ const ClubsList = (props) => {
           </button>
         </div>
       </div>
-      <div className="row">
+      <div className="row pb-1 col-lg-7">
         {clubs.map((club) => {
           const address = `${club.address.addressline1} ${club.address.city} ${club.address.postcode}`;
           const city = `${club.address.city}`;
           return (
-            <div className="col-lg-7 pb-1 club-list-container">
+            <div className="pb-1 club-list-container">
               <div className="card club-list-card">
                 <div className="card-body">
                   <h5 className="card-title club-card-title">{club.name}</h5>
@@ -188,7 +202,50 @@ const ClubsList = (props) => {
           );
         })}
       </div>
+      <div className="row pb-1">
+      <div className="input-group col-lg-4">
+            {/* <Button className='btns' buttonStyle='btn--outline' 
+                buttonSize='btn--small' onClick={findByName} type="button">Search
+            </Button> */}
+            <button
+              className="btn btn--outline btn--search"
+              type="button"
+              onClick={findByName}
+            >
+              Search
+            </button>
+          </div>
+        </div>
+        <div className="input-group col-lg-4">
+          
+          <div className="input-group-append">
+            {/* <Button className='btns' buttonStyle='btn--outline' 
+                buttonSize='btn--small' onClick={findByName} type="button">Search
+            </Button> */}
+            <button
+              className="btn btn--outline btn--search"
+              type="button"
+              onClick={findByPostcode}
+            >
+              Search
+            </button>
+          </div>
+        </div>
+        <div className="input-group col-lg-4">
+          
+          <div className="input-group-append">
+            <button
+              className="btn btn--outline btn--search"
+              type="button"
+              onClick={nextPage}
+            >
+              Next
+            </button>
+            
+            </div>
+      </div>
     </div>
+    
   );
 };
 
