@@ -6,10 +6,10 @@ import "./HomeTopClubsSection.css"
 function HomeTopClubsSection() {
     return(
         <div className="homesection-container">
-            <div className="homesection-title row pb-1">
-                <h3>A PEEK INTO THE CHARLIE'S UNDERGROUND</h3>
+            <div className="homesection-title row">
+                <h3>OUR FEATURED CLUBS</h3>
             </div>
-            <div class="homesection-card-container row pb-1">
+            <div class="homesection-card-container row">
             
             {/* 3 columns, one for each club 1 row */}
                 <div className="homesection-card col-lg-4">

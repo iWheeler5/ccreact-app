@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "./Button";
+import { useAuth0 } from "@auth0/auth0-react";
 import "./Navbar.css";
+
 
 function NavBar() {
   const [click, setClick] = useState(false);
@@ -17,6 +19,12 @@ function NavBar() {
       setButton(true);
     }
   };
+  
+  const { loginWithRedirect } = useAuth0();
+
+  const { logout } = useAuth0();
+
+  const { user, isAuthenticated, isLoading } = useAuth0();
 
   useEffect(() => {
     showButton();
@@ -64,16 +72,41 @@ function NavBar() {
               </Link>
             </li>
             <li className="nav-item">
+              <Link to="/Profile" className="nav-links" onClick={closeMobileMenu}>
+                PROFILE
+              </Link>
+            </li>
+            {/* <li className="nav-item">
               <Link
-                to="/sign-up"
                 className="nav-links-mobile"
                 onClick={closeMobileMenu}
               >
-                Sign Up
+                Sign In
               </Link>
-            </li>
+            </li> */}
           </ul>
-          {button && <Button buttonStyle="btn--outline">SIGN UP</Button>}
+          {()=>
+          {if (isLoading) {
+            return <p>Loading ...</p>;
+          }
+
+          return (
+            isAuthenticated && (
+              <li>
+                <p>{user.email}</p>
+              </li>
+            )
+          );
+
+          }}
+
+
+
+
+
+          {button && <Button buttonStyle="btn--outline" onClick={()=> loginWithRedirect()} >Sign In</Button>}
+          <br/>
+          {button && <Button buttonStyle="btn--outline" onClick={()=> logout({ returnTo: window.location.origin })} >Log out</Button>}
         </div>
       </nav>
     </>

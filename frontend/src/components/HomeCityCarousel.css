@@ -1,0 +1,12 @@
+.home-city-carousel-wrapper{
+    height:100%;
+    color: white;
+}
+
+.carousel-tile{
+    margin-bottom: 5px;
+}
+
+.control-dots{
+    bottom: 0;
+}

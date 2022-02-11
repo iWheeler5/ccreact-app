@@ -10,6 +10,10 @@ body {
     fixed;
 }
 
+h2{
+  color: white;
+}
+
 .home,
 .services,
 .products,
