@@ -1,5 +1,3 @@
-import React, { Component } from "react";
-import ReactDOM from 'react-dom';
 import "../App.css";
 import "./HomeCityCarousel.css"
 import "react-responsive-carousel/lib/styles/carousel.min.css";

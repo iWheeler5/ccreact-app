@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ClubCultureDataService from "../../services/clubculture";
 import { Link } from "react-router-dom";
-import { Button } from "../Button";
 
 const ClubsList = (props) => {
   const [clubs, setClubs] = useState([]);
@@ -171,7 +170,6 @@ const ClubsList = (props) => {
       </div>
       <div className="row pb-1 col-lg-7">
         {clubs.map((club) => {
-          const address = `${club.address.addressline1} ${club.address.city} ${club.address.postcode}`;
           const city = `${club.address.city}`;
           return (
             <div className="pb-1 club-list-container">
