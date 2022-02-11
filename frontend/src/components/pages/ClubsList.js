@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import ClubCultureDataService from "../../services/clubculture";
 import { Link } from "react-router-dom";
 import { Button } from "../Button";
-//import '../../App.css';
 
 const ClubsList = (props) => {
   const [clubs, setClubs] = useState([]);
