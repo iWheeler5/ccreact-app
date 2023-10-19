@@ -13,6 +13,7 @@ export default function HomeCityCarousel() {
                 <Carousel infiniteLoop useKeyboardArrows centerMode={true} centerSlidePercentage={33.3}>
                     <div class="carousel-tile">
                         <h4>TEST CAROUSEL ITEM 1</h4>
+                        <p>Test</p>
                     </div>
                     <div class="carousel-tile">
                         <h4>TEST CAROUSEL ITEM 2</h4>
